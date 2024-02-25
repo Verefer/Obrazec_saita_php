@@ -9,6 +9,7 @@
 <body>
 
 <?php include 'includes/header.php'; ?>
+<?php include 'includes/nav.php'; ?>
 
 <div class="content">
     <h1>Добро пожаловать на наш сайт!</h1>
