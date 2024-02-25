@@ -14,25 +14,25 @@
             <br><br>
             <div class="contact">
                 <a href="https://vk.com/verefer">
-                    <img src="asets/images/vk_logo.png" alt="VK Logo">
+                    <img src="asets/img/vk_logo.png" alt="VK Logo">
                     <p>VK</p>
                 </a>
             </div>
             <div class="contact">
                 <a href="https://t.me/verefer">
-                    <img src="asets/images/telegram_logo.png" alt="Telegram Logo">
+                    <img src="asets/img/telegram_logo.png" alt="Telegram Logo">
                     <p>Telegram</p>
                 </a>
             </div>
             <div class="contact">
                 <a href="https://wa.me/message/TCQBCKZE3XGAM1">
-                    <img src="asets/images/whatsapp_logo.png" alt="WhatsApp Logo">
+                    <img src="asets/img/whatsapp_logo.png" alt="WhatsApp Logo">
                     <p>WhatsApp</p>
                 </a>
             </div>
             <div class="contact">
                 <a href="https://github.com/verefer">
-                    <img src="asets/images/github_logo.png" alt="GitHub Logo">
+                    <img src="asets/img/github_logo.png" alt="GitHub Logo">
                     <p>GitHub</p>
                 </a>
             </div>
