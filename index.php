@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../asets/css/styles.css">
     <script src="../asets/js/script.js"></script>
     <script src="../asets/js/script_anim.js"></script>
+    <script src="../asets/js/script_anim2.js"></script>
 </head>
 <body>
 
