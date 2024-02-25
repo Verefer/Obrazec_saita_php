@@ -7,6 +7,7 @@
     <link rel="icon" href="../asets/img/logo.png">
     <link rel="stylesheet" href="../asets/css/styles.css">
     <script src="../asets/js/script.js"></script>
+    <script src="../asets/js/script_anim.js"></script>
 </head>
 <body>
 
