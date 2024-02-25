@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="../asets/css/styles.css">
 </head>
 <body>
 <?php include 'includes/header.php'; ?>
-
+<?php include 'includes/nav.php'; ?>
 <div class="content">
 <h1>Контакты</h1>
             <br><br>
