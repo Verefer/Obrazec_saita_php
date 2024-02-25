@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="icon" href="../asets/img/logo.png">
     <link rel="stylesheet" href="../asets/css/styles.css">
 </head>
 <body>
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/nav.php'; ?>
+<?php include 'includes/slidebar.php'; ?>
 <div class="content">
 <h1>Контакты</h1>
             <br><br>
@@ -37,5 +39,5 @@
                 </a>
             </div>
 </div>
-
+<div id="clear"></div>
 <?php include 'includes/footer.php'; ?>

@@ -43,9 +43,12 @@ header {
     color: inherit; /* При наведении оставляем цвет как у родительского элемента */
 }
 
-.container {
+.content{
+    float: right;
     width: 80%;
-    margin: 0 auto;
+    padding-left: 10px;
+    background: rgb(218, 218, 218);
+    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
 }
 
 /* Стили для заголовков */
@@ -122,4 +125,36 @@ footer p {
 
 .contact a:hover {
     color: red;
+}
+
+#sidebar {
+    background: #ccc; /* Цвет фона */
+    width: 20%; /* Ширина блока */
+    height: auto; /* Высота блока */
+    float: left; /* Выравнивание по левому краю */
+    text-align: left;
+    margin: 0 auto;
+    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+}
+
+#sidebar ul {
+    list-style-type: none; /* Удаляем маркеры списка */
+}
+
+#sidebar ul li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: rgb(0, 0, 0);
+}
+
+#sidebar ul li a:hover {
+    color: red;
+}
+
+#sidebar h5 {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: rgb(0, 0, 0); /* Изменяем цвет на черный */
+}
+
+#clear {
+    clear: both; /* Запрещает обтекание элемента слева и справа */
 }
