@@ -152,6 +152,7 @@ footer p {
 
 .contact a {
     text-decoration: none;
+    text-align: center;
     color: rgb(0, 0, 0);
 }
 
@@ -265,6 +266,7 @@ footer p {
     #sidebar .college-menu li a:hover {
         background: #f0f0f0;
     }
+
 
 }
 
