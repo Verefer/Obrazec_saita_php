@@ -7,12 +7,6 @@
                 <br>
                 <li><a href="../pages/AboutMe_Verefer/index.html">About Me</a></li>
                 <br>
-                <li><a href="#">#</a></li>
-                <br>
-                <li><a href="#">#</a></li>
-                <br>
-                <li><a href="#">#</a></li>
-                <br>
-                <li><a href="#">#</a></li>
+
             </ul>
 </div>

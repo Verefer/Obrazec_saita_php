@@ -130,7 +130,7 @@ footer p {
 #sidebar {
     background: #ccc; /* Цвет фона */
     width: 20%; /* Ширина блока */
-    height: auto; /* Высота блока */
+    height: max-content; /* Высота блока */
     float: left; /* Выравнивание по левому краю */
     text-align: left;
     margin: 0 auto;
