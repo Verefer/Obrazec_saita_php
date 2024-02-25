@@ -2,53 +2,49 @@
 body {
     font-family: Arial, sans-serif;
     width: 93%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 10px;
     padding: 0;
 }
 
 /* Шапка */
 header {
-    display: flex; /* Используем flexbox для размещения элементов внутри шапки */
-    align-items: center; /* Выравниваем элементы по вертикали */
+    display: flex;
+    align-items: center;
     background-color: #666;
     text-align: center;
-    height: auto;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    box-sizing: border-box;
 }
 
 /* Логотип */
 #logo {
-    max-width: 70px; /* Максимальная ширина логотипа */
-    margin-right: 10px; /* Добавляем небольшой отступ между логотипом и текстом */
+    max-width: 70px;
+    margin-right: 10px;
     padding-left: 10px;
 }
 
 /* Текст в шапке */
 #header-text {
-    flex-grow: 1; /* Растягиваем текстовый блок, чтобы он занимал оставшееся пространство */
+    flex-grow: 1;
 }
 
 #header-text h1 a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет текста от родительского элемента */
+    text-decoration: none;
+    color: inherit;
 }
 
 #header-text h1 a:hover {
-    color: inherit; /* При наведении оставляем цвет как у родительского элемента */
+    color: inherit;
 }
 
-.content{
+.content {
     float: right;
     width: 80%;
     padding-left: 10px;
     background: rgb(218, 218, 218);
-    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    box-sizing: border-box;
 }
 
 /* Стили для заголовков */
@@ -59,46 +55,83 @@ h1 {
 
 /* Стили для навигационного меню */
 nav {
-    background: #666; /* Цвет фона */
-    width: auto; /* Ширина блока */
-    height: 50px; /* Высота блока */
-    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    background: #666;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
-    list-style-type: none; /* Удаляем маркеры списка */
+    list-style-type: none;
     padding: 15px;
     margin: 5px;
 }
 
 nav ul li {
-    display: inline; /* Располагаем пункты меню в строку */
-    margin-right: 30px; /* Добавляем небольшой отступ между пунктами */
+    display: inline;
+    margin-right: 30px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Удаляем подчеркивание у ссылок */
-    color: rgb(0, 0, 0); /* Устанавливаем цвет текста */
-    font-weight: bold; /* Устанавливаем жирный шрифт */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 15px; /* добавляем отступы для кнопок */
+    border-radius: 5px; /* скругляем углы кнопок */
 }
 
 nav ul li a:hover {
-    color: #ff0000; /* Изменяем цвет текста при наведении курсора мыши */
+    color: #fff; /* изменяем цвет текста при наведении */
+    background-color: #000000a1; /* изменяем цвет фона при наведении */
+}
+
+#menu-toggle {
+    max-width: 30px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 999;
+    top: 100%;
+    left: 0;
+    display: block;
+    width: 25%;
+    border-radius: 5px; /* скругляем углы выпадающего меню */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* добавляем тень выпадающему меню */
+}
+
+.dropdown-menu li {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 15px; /* добавляем отступы для элементов списка в выпадающем меню */
+    color: #333; /* цвет текста элементов списка */
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #000000; /* изменяем цвет фона элемента списка при наведении */
 }
 
 /* Футер */
 footer {
-    background: #333; /* Цвет фона */
+    background: #333;
     text-align: center;
-    height: auto;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
     padding: 5px;
+    margin-top: 5px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    box-sizing: border-box;
 }
 
 footer p {
@@ -113,14 +146,13 @@ footer p {
 
 .contact img {
     border-radius: 50%;
-    width: 100px; /* Выберите желаемую ширину */
-    height: 100px; /* Выберите желаемую высоту */
+    width: 100px;
+    height: 100px;
 }
 
 .contact a {
-    text-align: center;
-    text-decoration: none; /* Удаляем подчеркивание у ссылок */
-    color: rgb(0, 0, 0); /* Устанавливаем цвет текста */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .contact a:hover {
@@ -128,33 +160,111 @@ footer p {
 }
 
 #sidebar {
-    background: #ccc; /* Цвет фона */
-    width: 20%; /* Ширина блока */
-    height: max-content; /* Высота блока */
-    float: left; /* Выравнивание по левому краю */
+    background: #ccc;
+    width: 19.5%;
+    float: left;
     text-align: left;
-    margin: 0 auto;
-    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    box-sizing: border-box;
+    border-radius: 5px; 
+    padding: 15px; 
 }
 
 #sidebar ul {
-    list-style-type: none; /* Удаляем маркеры списка */
+    list-style-type: none;
+    padding: 0; 
+}
+
+#sidebar ul li {
+    margin-bottom: 15px; 
 }
 
 #sidebar ul li a {
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
     color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px; 
+    border-radius: 5px; 
 }
 
 #sidebar ul li a:hover {
-    color: red;
+    color: #fff; 
+    background-color: #000000;
 }
 
-#sidebar h5 {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: rgb(0, 0, 0); /* Изменяем цвет на черный */
-}
 
 #clear {
-    clear: both; /* Запрещает обтекание элемента слева и справа */
+    clear: both;
 }
+
+
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 780px) {
+    body {
+        font-size: 14px;
+        /* Другие стили для мобильных устройств */
+    }
+
+    /* Пример скрытия боковой панели на мобильных устройствах */
+    #sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 100%; /* Ширина на мобильных устройствах будет 100% */
+    }
+
+    /* Скрытие списка меню по умолчанию */
+    #sidebar .college-menu {
+        display: none;
+    }
+
+    /* Показываем список меню при активации переключателя */
+    #sidebar.active .college-menu {
+        display: block;
+    }
+
+    /* Стили для кнопки меню */
+    #sidebar #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Стили для ссылок в основном меню */
+    #sidebar .main-menu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    /* Оформление ссылок в основном меню при наведении */
+    #sidebar .main-menu li a:hover {
+        background: #f0f0f0;
+    }
+
+    /* Стили для заголовка меню */
+    #sidebar .college-menu h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* Стили для ссылок в меню колледжа */
+    #sidebar .college-menu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    /* Оформление ссылок в меню колледжа при наведении */
+    #sidebar .college-menu li a:hover {
+        background: #f0f0f0;
+    }
+
+}
+

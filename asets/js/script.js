@@ -1,32 +1,23 @@
-// Пример скрипта для анимации навигационного меню
-document.addEventListener("DOMContentLoaded", function() {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menu-toggle');
+    var dropdownMenu = document.querySelector('.dropdown-menu');
 
-    if(navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('is-active');
-        });
-    }
-});
+    // Переменная для отслеживания состояния меню (открыто/закрыто)
+    var isMenuOpen = false;
 
-// Пример скрипта для валидации формы
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('#contact-form');
+    // Скрываем выпадающее меню при загрузке страницы
+    dropdownMenu.style.display = 'none';
 
-    if(form) {
-        form.addEventListener('submit', function(event) {
-            const emailInput = document.querySelector('#email');
-            const emailValue = emailInput.value;
-
-            if(!isValidEmail(emailValue)) {
-                event.preventDefault();
-                alert('Пожалуйста, введите корректный email адрес.');
-            }
-        });
-    }
-
-    function isValidEmail(email) {
-        return /\S+@\S+\.\S+/.test(email);
-    }
+    // При клике на изображение меню
+    menuToggle.addEventListener('click', function() {
+        // Если меню открыто, скрываем его
+        if (isMenuOpen) {
+            dropdownMenu.style.display = 'none';
+            isMenuOpen = false;
+        } else {
+            // Если меню закрыто, показываем его
+            dropdownMenu.style.display = 'block';
+            isMenuOpen = true;
+        }
+    });
 });

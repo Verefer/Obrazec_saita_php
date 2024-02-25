@@ -1,12 +1,8 @@
 <div id="sidebar">
-            <ul>
-                <h3>Колледж</h3>
-                <li><a href="../pages/Healthy_eating/index.html">Здоровое питание</a></li>
-                <br>
-                <li><a href="../pages/Image_healthy_eating/index.html">Изображения</a></li>
-                <br>
-                <li><a href="../pages/AboutMe_Verefer/index.html">About Me</a></li>
-                <br>
-
-            </ul>
+    <ul class="college-menu">
+        <h3>Колледж</h3>
+        <li><a href="../pages/Healthy_eating/index.html">Питание</a></li>
+        <li><a href="../pages/Image_healthy_eating/index.html">Изображения</a></li>
+        <li><a href="../pages/AboutMe_Verefer/index.html">About Me</a></li>
+    </ul>
 </div>
