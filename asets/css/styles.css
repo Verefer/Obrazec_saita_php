@@ -191,6 +191,10 @@ footer p {
     background-color: #000000;
 }
 
+.httle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20pt;
+}
 
 #clear {
     clear: both;
@@ -265,6 +269,9 @@ footer p {
         background: #f0f0f0;
     }
 
+    .httle{
+        font-size: 16pt;
+    }
 
 }
 
